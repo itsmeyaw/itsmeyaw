@@ -114,10 +114,28 @@
             <h3 class="display-4 text-white section"><span class="bg-black pe-4">Experiences</span></h3>
         </div>
         <div class="col-12">
+            <span class="fs-3">
+                📚
+            </span>
             <p class="text-white fs-4">
                 <b>November 2020 - January 2021</b>
                 <br/>Tutor at TUM
-                <br/>Teaches Java in Basic Programming Practical Course (<i>Praktikum: Grundlage der Programmierung</i>).
+                <br/>Teach Java in Basic Programming Practical Course (<i>Praktikum: Grundlage der Programmierung</i>).
+            </p>
+        </div>
+    </div>
+    <div class="row mt-5">
+        <div class="col-12 mb-5">
+            <h3 class="display-4 text-white section"><span class="bg-black pe-4">Projects</span></h3>
+        </div>
+        <div class="col-12">
+            <p class="text-white fs-4">
+                <b>PenguinDrawer</b>
+                <br/>Github link: <a href="https://github.com/itsmeyaw/PenguinDrawer" class="link">https://github.com/itsmeyaw/PenguinDrawer</a>
+                <br/>A small web app that based on PHP and Imagick to make customizable penguin logo with name. This
+                idea raises after I have to set my profile picture based on a logo as tutor in a course I tutored and I
+                want to make things easier. With usage of this app, a more uniform profile picture can be achieved among all tutor.
+                <br/><span class="small">ps. We used different penguin picture. The picture there is just example.</span>
             </p>
         </div>
     </div>
@@ -142,8 +160,10 @@
     </div>
     <div class="row mt-2 mb-2">
         <div class="col-12">
-            <p class="text-dark-grey text-center">Made with ❤ by Yudhistira Wibowo. Last updated March 2021.
-                <br/>Thanks to <a class="link" href="https://www.schnogz.com">Andrew Schneider</a> for the inspiration
+            <p class="text-dark-grey text-center">Made with ❤ by Yudhistira Wibowo. Last updated on <span
+                    id="last-update"></span>.
+                <br/>Thanks to <a class="link" href="https://www.schnogz.com">Andrew Schneider</a> for the design
+                inspiration
                 and thanks to <a class="link" href="https://icons8.com">Icons8</a> for their amazing icons!
                 <br/>This website is open source, too! You can check my <a class="link"
                                                                            href="https://github.com/itsmeyaw/itsmeyaw">Github
@@ -155,6 +175,17 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+<script type="text/javascript">
+    window.onload = (async () => {
+        const res = await fetch('https://api.github.com/repos/itsmeyaw/itsmeyaw').then(res => res.json());
+        const updateAt = new Date(res.pushed_at);
+        document.getElementById('last-update').innerText = new Intl.DateTimeFormat('en-DE', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        }).format(updateAt);
+    });
+</script>
 <!-- Shout out to magicoder10 for the code! -->
 <script type="text/javascript">
     (async () => {

@@ -1,6 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
+.small {
+    font-size: 0.75em!important;
+    font-style: italic;
+}
+
 :root {
     --black: #0A0A0A;
     --white100: #F5F5F5;
