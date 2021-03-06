@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+:root {
+    --black: #0A0A0A;
+    --white100: #F5F5F5;
+    --base-grey: #212121;
+    --dark-grey: #757575;
+    --light-grey: #BDBDBD;
+    --grey-400: #E0E0E0;
+}
+
+#langs {
+    margin-left: -5px;
+}
+
+.lang {
+    background: var(--base-grey);
+    float: left;
+    padding: 5px 10px 5px 10px;
+    color: white;
+    margin-left: 5px;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--light-grey);
+}
+
+.icon {
+    transform: translateY(-10%);
+}
+
+.link:hover {
+    color: var(--grey-400);
+}
+
+.main {
+    max-width: 950px !important;
+}
+
+.social {
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline;
+}
+
+.text-dark-grey {
+    color: var(--dark-grey);
+}
+
+.bg-black {
+    background: var(--black);
+}
+
+.status-icon {
+    background: #E0E0E0;
+    padding: 17px 20px 20px 20px;
+    border-radius: 50%;
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.bg-white100 {
+    background: var(--white100);
+}
+
+.dm {
+    font-family: 'DM Serif Display', serif;
+}
+
+.jm {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.section::after {
+    content: '';
+    display: block;
+    margin-top: -25px;
+    border-top: 1px solid var(--white100);
+}
+
+::selection {
+    background: #1A1A1A;
+}
