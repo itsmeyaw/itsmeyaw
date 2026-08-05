@@ -21,6 +21,11 @@
   <code>Python</code>
   <code>Java</code>
   <code>Go</code>
+  <code>Terraform</code>
+  <code>SQL</code>
+  <code>Docker</code>
+  <code>Kubernetes</code>
+  <code>Ansible</code>
 </p>
 
 <p align="center">
@@ -28,6 +33,17 @@
   <code>React</code>
   <code>Astro</code>
   <code>Spring</code>
+</p>
+
+<h3 align="center">Cloud</h3>
+
+<p align="center">
+  <code>AWS Lambda</code>
+  <code>AWS API Gateway</code>
+  <code>AWS DynamoDB</code>
+  <code>AWS S3</code>
+  <code>AWS CloudWatch</code>
+  <code>AWS IAM</code>
 </p>
 
 <h3 align="center">Connect</h3>
