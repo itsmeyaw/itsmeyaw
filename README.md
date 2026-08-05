@@ -6,14 +6,6 @@
   Hello, nice to meet you! I am software developer based in Munich, Germany.
 </p>
 
-<h3 align="center">Tooling</h3>
-
-<p align="center">
-  <code>neovim</code>
-  <code>ghostty</code>
-  <code>opencode</code>
-</p>
-
 <h3 align="center">Stack</h3>
 
 <p align="center">
@@ -44,6 +36,14 @@
   <code>AWS S3</code>
   <code>AWS CloudWatch</code>
   <code>AWS IAM</code>
+</p>
+
+<h3 align="center">Tooling</h3>
+
+<p align="center">
+  <code>neovim</code>
+  <code>ghostty</code>
+  <code>opencode</code>
 </p>
 
 <h3 align="center">Connect</h3>
